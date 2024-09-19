@@ -18,7 +18,7 @@ inquirer
     ); //the name to save the file
     let date = new Date().getDate().toLocaleString();
     let url = answers.theUrl + date;
-    fs.appendFile("URLs.txt", url"\n", (err) => {
+    fs.appendFile("URLs.txt", url, (err) => {
       if (err) throw err;
     });
   })
